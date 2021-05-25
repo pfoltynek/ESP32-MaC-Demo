@@ -211,13 +211,13 @@ void callback_mqtt(char* topic, byte* payload, unsigned int length)
 			if(!getIsMeasurment())
 			{
 				setIsMeasurment(true);
-				xTaskCreatePinnedToCore(coreTaskMeasurment,     /* Function to implement the task */
+				xTaskCreatePinnedToCore(coreTaskMeasurment,         /* Function to implement the task */
 					"coreTaskMeasurment",                       /* Name of the task */
-					10000,                                        /* Stack size in words */
+					10000,                                      /* Stack size in words */
 					NULL,                                       /* Task input parameter */
 					5,                                          /* Priority of the task */
 					&coreTaskMeasurmentHandle,                  /* Task handle. */
-					0);                                         /* Core where the task should run, man i loop is on core 1 */
+					0);                                         /* Core where the task should run, main loop is on core 1 */
 			}
 		}
 
