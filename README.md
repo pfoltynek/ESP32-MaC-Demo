@@ -1,5 +1,5 @@
 # ESP32-MaC-Demo
-Descriptions 
+[Measurement and data processing from Internet of Things modules by dual-core application using ESP32 board](https://doi.org/10.1177/0020294019857748)
 
 # Dependency
 - [Web Server](https://github.com/Pedroalbuquerque/ESP32WebServer)
